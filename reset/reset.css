@@ -96,18 +96,36 @@ input, textarea, select {
 }
 
 
-/*
-
-Set up HTML5.
-
-Notes:
-  Source is not an element that represents anything on its own, thus it does not need any styling.
-  Time is likely to be inline. I think details and legend are also, though I'm not sure.
-  I assume keygen will be too.
-
-*/
+/* Set up HTML5. Based on: http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#rendering */
 
 article, aside, audio, canvas, command, datalist, details, dialog, embed, figure,
 footer, header, hgroup, mark, menu, meter, nav, output, progress, rp, rt, ruby, section, video {
   display: block;
 }
+
+
+[hidden], area, base, basefont, command, datalist, head,
+input[type=hidden], link, menu[type=context], meta, noembed, noframes,
+param, rp, script, source, style, title {
+  display: none;
+}
+
+address, article, aside, blockquote, body, center, dd, dir, div, dl,
+dt, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr,
+html, legend, listing, menu, nav, ol, p, plaintext, pre, section, ul,
+xmp { display: block; }
+
+table { display: table; }
+caption { display: table-caption; }
+colgroup { display: table-column-group; }
+col { display: table-column; }
+thead { display: table-header-group; }
+tbody { display: table-row-group; }
+tfoot { display: table-footer-group; }
+tr { display: table-row; }
+td, th { display: table-cell; }
+
+li { display: list-item; }
+
+ruby { display: ruby; }
+rt { display: ruby-text; }

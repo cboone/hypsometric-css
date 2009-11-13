@@ -4,7 +4,7 @@ HTML5 default styles.
 By Christopher Boone: http://hypsometry.com/
 
 Based on the examples in: http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#rendering
-I've removed all references to elements that have been deprecated in HTML5.
+I've removed all references to elements and attributes that have been deprecated in HTML5.
 
 */
 
@@ -194,15 +194,18 @@ x x x x x h1 {
 */
 
 dd {
-  margin-left: 40px; /* LTR-specific: use 'margin-right' for rtl elements */
+  margin-left: 40px;
+/* LTR-specific: use 'margin-right' for rtl elements */
 }
 
 details > dd, figure > dd {
-  margin-left: 0; /* LTR-specific: use 'margin-right' for rtl elements */
+  margin-left: 0;
+/* LTR-specific: use 'margin-right' for rtl elements */
 }
 
 menu, ol, ul {
-  padding-left: 40px; /* LTR-specific: use 'padding-right' for rtl elements */
+  padding-left: 40px;
+/* LTR-specific: use 'padding-right' for rtl elements */
 }
 
 blockquote, figure {
@@ -242,46 +245,152 @@ th {
   text-align: center;
 }
 
-table[align=left] {
-  float: left;
+
+/* Fonts and colors */
+
+* {
+  color: #000;
+  background-color: transparent;
 }
 
-table[align=right] { float: right; }
-table[align=center], table[align=abscenter],
-table[align=absmiddle], table[align=middle] {
-  margin-left: auto; margin-right: auto;
+body {
+  color: #000;
+  background-color: #fff;
 }
 
-caption[align=bottom] { caption-side: bottom; }
-p[align=left], h1[align=left], h2[align=left], h3[align=left],
-h4[align=left], h5[align=left], h6[align=left] {
-  text-align: left;
+address, cite, dfn, em, i, var {
+  font-style: italic;
 }
-p[align=right], h1[align=right], h2[align=right], h3[align=right],
-h4[align=right], h5[align=right], h6[align=right] {
-  text-align: right;
+
+b, strong, th {
+  font-weight: bold;
 }
-p[align=center], h1[align=center], h2[align=center], h3[align=center],
-h4[align=center], h5[align=center], h6[align=center] {
-  text-align: center;
+
+code, kbd, pre, samp, tt {
+  font-family: monospace;
 }
-p[align=justify], h1[align=justify], h2[align=justify], h3[align=justify],
-h4[align=justify], h5[align=justify], h6[align=justify] {
-  text-align: justify;
+
+h1 {
+  font-size: 2.00em;
+  font-weight: bold;
 }
-col[valign=top], thead[valign=top], tbody[valign=top],
-tfoot[valign=top], tr[valign=top], td[valign=top], th[valign=top] {
-  vertical-align: top;
+
+h2 {
+  font-size: 1.50em;
+  font-weight: bold;
 }
-col[valign=middle], thead[valign=middle], tbody[valign=middle],
-tfoot[valign=middle], tr[valign=middle], td[valign=middle], th[valign=middle] {
-  vertical-align: middle;
+
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
 }
-col[valign=bottom], thead[valign=bottom], tbody[valign=bottom],
-tfoot[valign=bottom], tr[valign=bottom], td[valign=bottom], th[valign=bottom] {
-  vertical-align: bottom;
+
+h4 {
+  font-size: 1.00em;
+  font-weight: bold;
 }
-col[valign=baseline], thead[valign=baseline], tbody[valign=baseline],
-tfoot[valign=baseline], tr[valign=baseline], td[valign=baseline], th[valign=baseline] {
-  vertical-align: baseline;
+
+h5 {
+  font-size: 0.83em;
+  font-weight: bold;
 }
+
+h6 {
+  font-size: 0.67em;
+  font-weight: bold;
+}
+
+small, sub, sup {
+  font-size: smaller;
+}
+
+sub, sup {
+  line-height: normal;
+}
+
+:link {
+  color: blue;
+}
+
+:visited {
+  color: purple;
+}
+
+mark {
+  background: yellow;
+  color: black;
+}
+
+table, td, th {
+  border-color: gray;
+}
+
+thead, tbody, tfoot, tr {
+  border-color: inherit;
+}
+
+/* Some of the following combinations might be unnecessary or impossible. */
+
+article h1, aside h1, nav h1, section h1 {
+  font-size: 1.50em;
+}
+
+article aside h1, article nav h1, article section h1,
+aside article h1, aside nav h1, aside section h1,
+nav article h1, nav aside h1, nav section h1,
+section article h1, section aside h1, section nav h1 {
+  font-size: 1.17em;
+}
+
+article aside nav h1, article aside section h1,
+article nav aside h1, article nav section h1,
+article section aside h1, article section nav h1,
+aside article nav h1, aside article section h1,
+aside nav article h1, aside nav section h1,
+aside section article h1, aside section nav h1,
+nav article aside h1, nav article section h1,
+nav aside article h1, nav aside section h1,
+nav section article h1, nav section aside h1,
+section article aside h1, section article nav h1,
+section aside article h1, section aside nav h1,
+section nav article h1, section nav aside h1 {
+  font-size: 1.00em;
+}
+
+article aside nav section h1,
+article aside section nav h1,
+article nav aside section h1,
+article nav section aside h1,
+article section aside nav h1,
+article section nav aside h1,
+aside article nav section h1,
+aside article section nav h1,
+aside nav article section h1,
+aside nav section article h1,
+aside section article nav h1,
+aside section nav article h1,
+nav article aside section h1,
+nav article section aside h1,
+nav aside article section h1,
+nav aside section article h1,
+nav section article aside h1,
+nav section aside article h1,
+section article aside nav h1,
+section article nav aside h1,
+section aside article nav h1,
+section aside nav article h1,
+section nav article aside h1,
+section nav aside article h1 {
+  font-size: 0.83em;
+}
+
+/*
+
+The spec also calls for the following, but I can't conceive of how it could exist. There must
+be some further nesting allowed that I haven't understood yet - section section perhaps?
+
+x x x x x h1 {
+  font-size: 0.67em;
+}
+
+*/
