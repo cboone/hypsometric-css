@@ -1,0 +1,89 @@
+/*
+
+Reset everything and set up HTML5 elements.
+   
+Based on:
+  Eric Meyer's reset.css (v1.0 | 20080212): http://meyerweb.com/eric/tools/css/reset
+  Yahoo's YUI 3 CSS Reset: http://developer.yahoo.com/yui/3/cssreset/
+
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, audio, canvas, datalist, details, eventsource, figure,
+footer, header, hgroup, keygen, mark, menu, meter, nav, output, progress,
+ruby, rp, rt, section, source, time, video {
+	margin: 0;
+	padding: 0;
+	
+	background: transparent;
+	border: 0;
+	outline: 0;
+	
+	font-size: 100%;
+	vertical-align: baseline;
+	font-style: normal;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+	content: none;
+}
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  
+  text-decoration: none;
+}
+
+
+/*
+
+Set up HTML5.
+
+Notes:
+  Source is not an element that represents anything on its own, thus it does not need any styling.
+  Time is likely to be inline.
+
+*/
+
+article, aside, audio, dialog, embed, figure, footer, header, hgroup,
+mark, menu, meter, nav, progress, section, video {
+  display: block;
+}
+
