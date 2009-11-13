@@ -1,6 +1,6 @@
 # Hypsometric CSS #
 
-By Christopher Boone.
+By [Christopher Boone][5].
 
 A hodge-podge of stylesheets that I find useful on most projects. Including:
 
@@ -14,3 +14,4 @@ Please feel free to use them.
 [2]: http://meyerweb.com/eric/tools/css/reset
 [3]: http://developer.yahoo.com/yui/3/cssreset/
 [4]: http://github.com/cboone/hypsometric-css/blob/master/typography/font-size.css
+[5]: http://hypsometry.com
