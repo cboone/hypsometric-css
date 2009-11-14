@@ -4,9 +4,9 @@ By [Christopher Boone][5].
 
 A hodge-podge of stylesheets that I find useful on most projects. Including:
 
-- [reset.css][1]: Resets the styling of all elements to the minimum possible, while keeping a few important details. Does not include elements deprecated in HTML5. Also sets up default block styling for HTML5 elements as appropriate. Based on [Eric Meyer's reset.css][2], [YUI's CSS reset][3], and my personal experience.
 - [font-size.css][4]: Outlines basic type sizes and appropriate leading.
 - [html5-defaults.css][6]: The default styles that browsers are supposed to apply to HTML5 documents. Derived from [the November 13 draft spec][7].
+- [reset.css][1]: Resets the styling of all elements to the minimum possible, while keeping a few important details. Does not include elements deprecated in HTML5. Also sets up default block styling for HTML5 elements as appropriate. Based on [Eric Meyer's reset.css][2], [YUI's CSS reset][3], and my personal experience.
 
 Please feel free to use them.
 
