@@ -3,13 +3,22 @@
 HTML5 default styles.
 By Christopher Boone: http://hypsometry.com/
 
-Based on the examples in: http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#rendering
-I've removed all references to elements and attributes that have been deprecated in HTML5.
+Based on the examples in:
+  http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#the-css-user-agent-style-sheet-and-presentational-hints
+
+Notes:
+  I've removed all references to elements and attributes that have been deprecated in HTML5.
+  There are additional rendering instructions in the spec that cannot be represented in abstract CSS.
 
 */
 
 
-/* Display types */
+/*
+
+Display types
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#display-types
+
+*/
 
 *[hidden], area, base, command, datalist, head,
 input[type=hidden], link, menu[type=context], meta,
@@ -72,12 +81,13 @@ rt {
   display: ruby-text;
 }
 
-br {
-  white-space: pre;
-}
 
+/*
 
-/* Margins and padding */
+Margins and padding
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#margins-and-padding
+
+*/
 
 blockquote, dl, figure, menu, ol, p, pre, ul {
   margin-top: 1em;
@@ -223,7 +233,12 @@ td, th {
 }
 
 
-/* Alignment */
+/*
+
+Alignment
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#alignment
+
+*/
 
 thead, tbody, tfoot, table > tr {
   vertical-align: middle;
@@ -246,7 +261,12 @@ th {
 }
 
 
-/* Fonts and colors */
+/*
+
+Fonts and colors
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#fonts-and-colors
+
+*/
 
 * {
   color: #000;
@@ -394,3 +414,134 @@ x x x x x h1 {
 }
 
 */
+
+
+/*
+
+Punctuations and decorations
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#punctuation-and-decorations
+
+*/
+
+:link, :visited, ins {
+  text-decoration: underline;
+}
+
+abbr[title] {
+  text-decoration: dotted underline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+q:before {
+  content: open-quote;
+}
+
+q:after {
+  content: close-quote;
+}
+
+br, pre {
+  white-space: pre;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+menu, ul {
+  list-style-type: disc;
+}
+
+menu dl, menu menu, menu ul,
+ol dl, ol menu, ol ul,
+ul dl, ul menu, ul ul {
+  list-style-type: circle;
+}
+
+menu menu dl, menu menu menu, menu menu ul,
+menu ol dl, menu ol menu, menu ol ul,
+menu ul dl, menu ul menu, menu ul ul,
+ol menu dl, ol menu menu, ol menu ul,
+ol ol dl, ol ol menu, ol ol ul,
+ol ul dl, ol ul menu, ol ul ul,
+ul menu dl, ul menu menu, ul menu ul,
+ul ol dl, ul ol menu, ul ol ul,
+ul ul dl, ul ul menu, ul ul ul {
+  list-style-type: square;
+}
+
+table {
+  border-style: outset;
+}
+
+td, th {
+  border-style: inset;
+}
+
+*[dir=ltr] {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+*[dir=rtl] {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+bdo[dir=ltr], bdo[dir=rtl] {
+  unicode-bidi: bidi-override;
+}
+
+
+/*
+
+Resetting rules for inherited properties
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#resetting-rules-for-inherited-properties
+
+*/
+
+table, input, select, option, optgroup, button, textarea, keygen {
+  text-indent: initial;
+}
+
+
+/*
+
+The hr element
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#the-hr-element-0
+
+*/
+
+hr {
+  color: gray;
+  border-style: inset;
+  border-width: 1px;
+}
+
+
+/*
+
+The fieldset element
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#the-fieldset-element-0
+
+*/
+
+fieldset {
+  margin-left: 2px;
+  margin-right: 2px;
+  border: groove 2px ThreeDFace;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+
+/*
+
+Replaced elements
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#replaced-elements
+
+*/
+
+
