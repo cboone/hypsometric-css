@@ -9,6 +9,9 @@ Based on the examples in:
 Notes:
   I've removed all references to elements and attributes that have been deprecated in HTML5.
   There are additional rendering instructions in the spec that cannot be represented in abstract CSS.
+  Probably not all the CSS declared here is actually supported by browsers.
+  I've left out all the element bindings, since I believe only Mozilla supports that CSS property, and it currently
+  only supports it in a proprietary way.
 
 */
 
@@ -539,9 +542,11 @@ fieldset {
 
 /*
 
-Replaced elements
-http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#replaced-elements
+Replaced elements - embedded content
+http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#embedded-content-2
 
 */
 
-
+iframe {
+  border: 2px inset;
+}
