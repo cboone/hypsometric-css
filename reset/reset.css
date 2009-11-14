@@ -9,15 +9,28 @@ Based on:
 
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, audio, canvas, command, datalist, details, eventsource,
-figure, footer, header, hgroup, keygen, mark, menu, meter, nav, output,
-progress, ruby, rp, rt, section, source, time, video {
+*[hidden], command, datalist, input[type=hidden], menu[type=context], rp, source {
+  display: none;
+}
+
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ruby {
+  display: ruby;
+}
+
+rt {
+  display: ruby-text;
+}
+
+a, abbr, address, article, aside, audio, blockquote, body, canvas, caption, cite, code, command,
+datalist, del, details, dfn, div, dl, dt, dd, em, eventsource, fieldset, figure, footer, form,
+h1, h2, h3, h4, h5, h6, header, hgroup, html, iframe, img, ins, kbd, keygen, label, legend, li,
+mark, menu, meter, nav, ol, output, p, pre, progress, span, object, q, ruby, rp, rt, 
+samp, small, section, source, strong, sub, sup, table, tbody, tfoot, thead, time, tr, th, td, ul,
+var, video {
 	margin: 0;
 	padding: 0;
 	
@@ -27,16 +40,22 @@ progress, ruby, rp, rt, section, source, time, video {
 	
 	font-size: 100%;
 	font-style: normal;
+	font-weight: normal;
 	font-variant: normal;
+	text-decoration: none;
 	vertical-align: baseline;
 }
 
-body {
-	line-height: 1;
+a {
+  color: inherit;
+  
+  text-decoration: none;
 }
 
-ol, ul {
-	list-style: none;
+address, caption, cite, code, dfn, em, h1, h2, h3, h4, h5, h6, strong, th, var {
+  font-size: 1em;
+	font-style: normal;
+	font-weight: normal;
 }
 
 blockquote, q {
@@ -49,36 +68,30 @@ q:before, q:after {
 	content: none;
 }
 
-ins {
-	text-decoration: none;
+body {
+	line-height: 1;
+}
+
+caption, th {
+	text-align: left;
 }
 
 del {
 	text-decoration: line-through;
 }
 
-/* Tables still need 'cellspacing="0"' in the markup. */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+input, textarea, select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
 }
 
-address, caption, cite, code, dfn,
-em, strong, th, var,
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1em;
-	font-style: normal;
-	font-weight: normal;
+ins {
+	text-decoration: none;
 }
 
-a {
-  color: inherit;
-  
-  text-decoration: none;
-}
-
-caption, th {
-	text-align: left;
+menu, ol, ul {
+	list-style: none;
 }
 
 sup {
@@ -89,43 +102,7 @@ sub {
 	vertical-align: text-bottom;
 }
 
-input, textarea, select {
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: inherit;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-
-/* Set up HTML5. Based on: http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#rendering */
-
-article, aside, audio, canvas, command, datalist, details, dialog, embed, figure,
-footer, header, hgroup, mark, menu, meter, nav, output, progress, rp, rt, ruby, section, video {
-  display: block;
-}
-
-
-[hidden], area, base, basefont, command, datalist, head,
-input[type=hidden], link, menu[type=context], meta, noembed, noframes,
-param, rp, script, source, style, title {
-  display: none;
-}
-
-address, article, aside, blockquote, body, center, dd, dir, div, dl,
-dt, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr,
-html, legend, listing, menu, nav, ol, p, plaintext, pre, section, ul,
-xmp { display: block; }
-
-table { display: table; }
-caption { display: table-caption; }
-colgroup { display: table-column-group; }
-col { display: table-column; }
-thead { display: table-header-group; }
-tbody { display: table-row-group; }
-tfoot { display: table-footer-group; }
-tr { display: table-row; }
-td, th { display: table-cell; }
-
-li { display: list-item; }
-
-ruby { display: ruby; }
-rt { display: ruby-text; }

@@ -210,18 +210,15 @@ x x x x x h1 {
 */
 
 dd {
-  margin-left: 40px;
-/* LTR-specific: use 'margin-right' for rtl elements */
+  margin-left: 40px; /* LTR-specific: use 'margin-right' for rtl elements */
 }
 
 details > dd, figure > dd {
-  margin-left: 0;
-/* LTR-specific: use 'margin-right' for rtl elements */
+  margin-left: 0; /* LTR-specific: use 'margin-right' for rtl elements */
 }
 
 menu, ol, ul {
-  padding-left: 40px;
-/* LTR-specific: use 'padding-right' for rtl elements */
+  padding-left: 40px; /* LTR-specific: use 'padding-right' for rtl elements */
 }
 
 blockquote, figure {
