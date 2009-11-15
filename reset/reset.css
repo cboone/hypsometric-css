@@ -14,7 +14,7 @@ Based on:
   display: none;
 }
 
-article, aside, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 

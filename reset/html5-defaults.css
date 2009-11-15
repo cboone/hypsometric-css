@@ -12,6 +12,7 @@ Notes:
   Probably not all the CSS declared here is actually supported by browsers.
   I've left out all the element bindings, since I believe only Mozilla supports that CSS property, and it currently
   only supports it in a proprietary way.
+  I've added the details element to the list of those declared to be block level, since I think it must be, per the description: http://www.whatwg.org/specs/web-apps/current-work/multipage/interactive-elements.html#the-details-element
 
 */
 
@@ -33,7 +34,7 @@ table > form, thead > form, tbody > form, tfoot > form, tr > form {
   display: none;
 }
 
-address, article, aside, blockquote, body, dd, div, dl, dt,
+address, article, aside, blockquote, body, details, dd, div, dl, dt,
 figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr,
 html, legend, menu, nav, ol, p, pre, section, ul {
   display: block;
