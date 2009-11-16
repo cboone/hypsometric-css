@@ -6,7 +6,12 @@ By Christopher Boone: http://hypsometry.com/
 Based on:
   Eric Meyer's reset.css (version 1.0 | 20080212): http://meyerweb.com/eric/tools/css/reset
   Yahoo's YUI CSS Reset (version 3.0, build 1549): http://developer.yahoo.com/yui/3/cssreset/
-  The examples in the latest HTML5 spec (November 2009): http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#the-css-user-agent-style-sheet-and-presentational-hints
+  The examples in the latest HTML5 spec (November 13 2009): http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#the-css-user-agent-style-sheet-and-presentational-hints
+
+Notes:
+  Only HTML5 elements are dealt with here. Deprecated elements are not affected.
+  I've added the details element to the list of those declared to be block level, since I think it must be, per the description.
+  Probably not all the CSS declared here is actually supported by browsers.
 
 */
 
