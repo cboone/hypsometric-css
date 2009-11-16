@@ -16,5 +16,5 @@ Please feel free to use them.
 [3]: http://developer.yahoo.com/yui/3/cssreset/
 [4]: http://github.com/cboone/hypsometric-css/blob/master/typography/font-size.css
 [5]: http://hypsometry.com
-[6]: http://github.com/cboone/hypsometric-css/blob/master/reset/html5-defaults.css
+[6]: http://github.com/cboone/hypsometric-css/blob/master/html5/html5-defaults.css
 [7]: http://www.whatwg.org/specs/web-apps/current-work/multipage/rendering.html#the-css-user-agent-style-sheet-and-presentational-hints

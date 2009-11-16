@@ -2,7 +2,7 @@
 
 By [Christopher Boone][1].
 
-The [html5-defaults][3] stylesheet contains the basic CSS styles that [the latest -- November 13, 2009 -- draft standard of HTML5][4] recommend that browsers use. I compiled it from the examples in [&sect; 11 Rendering of the draft standard][2].
+The [html5-defaults][3] stylesheet contains the basic CSS styles that [the latest -- November 13, 2009 -- draft standard of HTML5][4] recommend that browsers use. I compiled it from the examples in [&sect;11 Rendering of the draft standard][2].
 
 Notes:
 
