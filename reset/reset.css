@@ -82,6 +82,10 @@ caption, th {
 	text-align: left;
 }
 
+code, kbd, samp {
+  font-family: inherit;
+}
+
 del {
 	text-decoration: line-through;
 }
