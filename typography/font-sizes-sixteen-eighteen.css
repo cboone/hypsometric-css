@@ -55,17 +55,17 @@ Licensed under a Creative Commons Attribution 3.0 Unported license: http://creat
   line-height: 1.5; /* 54px = 3 lines */
 }
 
-.forty_eight {
+.triple_pica {
   font-size: 4.8em; /* 48px */
   line-height: 1.125; /* 54px = 3 lines */
 }
 
-.sixty {
+.quadruple_pica {
   font-size: 6em; /* 60px */
   line-height: 1.2; /* 72px = 4 lines */
 }
 
-.seventy_two {
+.quintuple_pica {
   font-size: 7.2em; /* 72px */
   line-height: 1; /* 72px = 4 lines */
 }
