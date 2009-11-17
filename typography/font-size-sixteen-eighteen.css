@@ -1,6 +1,7 @@
 /*
 
 Basic type sizing and appropriate leading.
+For use on a page where the body text is set to 16/18.
 
 Copyright 2009 Christopher Boone: http://hypsometry.com/
 Licensed under a Creative Commons Attribution 3.0 Unported license: http://creativecommons.org/licenses/by/3.0/
@@ -9,60 +10,62 @@ Licensed under a Creative Commons Attribution 3.0 Unported license: http://creat
 
 .long_primer {
   font-size: 1em; /* 10px */
-  line-height: 1.81; /* 18px */
+  line-height: 1.8; /* 18px = 1 line */
 }
 
 .small_pica {
   font-size: 1.1em; /* 11px */
-  line-height: 1.64; /* 18px */
+  line-height: 1.636; /* 18px = 1 line */
 }
 
 .pica {
   font-size: 1.2em; /* 12px */
-  line-height: 1.5; /* 18px */
+  line-height: 1.5; /* 18px = 1 line */
 }
 
 .english {
   font-size: 1.4em; /* 14px */
-  line-height: 1.29; /* 18px */
+  line-height: 1.286; /* 18px = 1 line */
 }
 
 .columbian {
   font-size: 1.6em; /* 16px */
-  line-height: 1.13; /* 18px */
+  line-height: 1.125; /* 18px = 1 line */
 }
 
 .great_primer {
   font-size: 1.8em; /* 18px */
-  line-height: 2; /* 36px */
+  line-height: 1; /* 18px = 1 line */
+  line-height: 2; /* 36px = 2 lines */
 }
 
 .double_small_pica {
   font-size: 2.1em; /* 21px */
-  line-height: 1.72; /* 36px */
+  line-height: 1.714; /* 36px = 2 lines */
 }
 
 .double_pica {
   font-size: 2.4em; /* 24px */
-  line-height: 1.5; /* 36px */
+  line-height: 1.5; /* 36px = 2 lines */
 }
 
 .double_great_primer {
   font-size: 3.6em; /* 36px */
-  line-height: 1.5; /* 54px */
+  line-height: 1; /* 36px = 2 lines */
+  line-height: 1.5; /* 54px = 3 lines */
 }
 
 .forty_eight {
   font-size: 4.8em; /* 48px */
-  line-height: 1.5; /* 72px */
+  line-height: 1.125; /* 54px = 3 lines */
 }
 
 .sixty {
   font-size: 6em; /* 60px */
-  line-height: 1.5; /* 90px */
+  line-height: 1.2; /* 72px = 4 lines */
 }
 
 .seventy_two {
   font-size: 7.2em; /* 72px */
-  line-height: 1.5; /* 108px */
+  line-height: 1; /* 72px = 4 lines */
 }
