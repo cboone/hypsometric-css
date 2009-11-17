@@ -9,7 +9,7 @@ In addition, the stylesheet declares some basic display styles for [the new HTML
 This stylesheet is based primarily on [Eric Meyer's reset.css][4] (version 1.0 | 20080212) and [YUI's CSS Reset][5] (version 3.0, build 1549), as well as on my own experience. The HTML5 styles are based on [the rendering suggestions contained in the November 13, 2009, draft standard][6], and [the CSS I extracted][7] from that lengthy document.
 
 
-## Notes: ##
+## Notes. ##
 
 - Only [HTML5 elements][8] are dealt with here. [Deprecated elements][9] are not affected.
 - I've added the `details` element to the list of those declared to be block level, since I think it must be, [per the description][9].
@@ -18,7 +18,7 @@ This stylesheet is based primarily on [Eric Meyer's reset.css][4] (version 1.0 |
 Feel free to use this in any way. And please let me know if I've made any mistakes, or if there any improvements I could make. Thanks.
 
 
-## Bibliography: ##
+## Bibliography. ##
 
 Christopher Boone. [Announcement on the Hypsometry Blog.][11]
 
@@ -26,7 +26,7 @@ Christopher Boone. [Announcement on the Hypsometry Blog.][11]
 
 Eric Meyer. [Reset.css.][4]
 
-Web Hypertext Application Technology Working Group (WHATWG). [HTML5 Draft Standard, November 13 2009, &sect;11 Rendering.][6]
+Web Hypertext Application Technology Working Group (WHATWG). [HTML5 Draft Standard, 13 November 2009, &sect;11 Rendering.][6]
 
 Yahoo User Interface (YUI) Library Project. [CSS Reset.][5]
 
