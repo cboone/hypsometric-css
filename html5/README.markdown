@@ -4,7 +4,7 @@ By [Christopher Boone][1].
 
 The [html5-defaults][3] stylesheet contains the basic CSS styles that [the latest -- November 13, 2009 -- draft standard of HTML5][4] recommend that browsers use. I compiled it from the examples in [&sect;11 Rendering of the draft standard][2].
 
-Notes:
+## Notes: ##
 
 - I've removed all references to [elements][5] and [attributes][6] that have been deprecated in HTML5.
 - There are additional rendering instructions in the spec that cannot be represented in abstract CSS.
