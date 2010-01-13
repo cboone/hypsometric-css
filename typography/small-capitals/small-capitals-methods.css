@@ -1,0 +1,41 @@
+/*
+
+Various small capitals methods.
+
+Copyright 2010 Christopher Boone: http://hypsometry.com/
+Licensed under a Creative Commons Attribution 3.0 Unported license: http://creativecommons.org/licenses/by/3.0/
+
+*/
+
+
+p {
+  font-size: 1.6em; /* 16px */
+  line-height: 1.5; /* 24px = 1 line */
+}
+
+p span.font-variant {
+  font-variant: small-caps;
+}
+
+p span.joe-clark {
+  font-size: 0.75em; /* 12px */
+  line-height: 2; /* 24px = 1 line */
+  text-transform: uppercase;
+}
+
+p span.clever-joe-clark span {
+  font-size: smaller;
+  text-transform: uppercase;
+}
+
+p span.nick-shinn,
+p span.clever-nick-shinn span {
+  font-size: 0.6875em; /* 11px */
+  line-height: 2.1818em; /* 24px = 1 line. */
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+p span.font-face {
+  font-family: "IM FELL Great Primer SC";
+}
