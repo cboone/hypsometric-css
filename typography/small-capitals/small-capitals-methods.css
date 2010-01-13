@@ -7,8 +7,16 @@ Licensed under a Creative Commons Attribution 3.0 Unported license: http://creat
 
 */
 
+@font-face {
+  font-family: "IM FELL Great Primer SC";
+  src: local("IM FELL Great Primer SC");
+  
+/*  In a better world, the following would not be commented out. */
+/*  font-variant: small-caps; */
+}
 
 p {
+  font-family: "IM FELL Great Primer PRO Roman";
   font-size: 1.6em; /* 16px */
   line-height: 1.5; /* 24px = 1 line */
 }
